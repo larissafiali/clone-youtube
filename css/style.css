@@ -1,0 +1,337 @@
+
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto; /*O objetivo do overflow é fazer com que conteúdos muito grandes possam caber dentro de uma página através do uso de barras de rolagem.*/
+    font-size: 14px;
+    background-color: oldlace;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container{
+    height: 80px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-youtube{
+    font-size: 40px;
+}
+
+.cabecalho__pesquisar__item{
+    display: none;
+}
+.pesquisar__input{
+    width: 260px;
+    height: 32px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid rgb(211, 211, 211);
+}
+ 
+.fa-search{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(231, 230, 230);
+    padding: 4px 15px 8px 15px;
+}
+
+.cabecalho__icones__item{
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+/* MENU LATERAL */
+
+.menu__container{
+    background-color: #ff94e2;
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content:space-around ;
+    height: 100%;
+    color: white;
+}
+
+.menu__lista li{
+    align-self: center;/*é uma propriedade de item de flex-box, funciona igual align-item porém o align item se aplica no pai, e esta se aplica direto no elemento desejado*/
+}
+.menu__itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4){
+    display: none;
+}
+
+.icone__inicio::before {
+    content: url(../images/menu/home.png);
+    
+}
+
+.icone__explorar::before {
+    content: url(../images/menu/explore.png);
+    
+}
+
+.icone__shorts::before {
+    content: url(../images/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../images/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../images/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../images/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../images/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../images/menu/thumb_up_alt.png);
+}
+
+
+.icone__gaveta::before {
+    content: url(../images/menu/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../images/menu/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../images/menu/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../images/menu/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../images/menu/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../images/menu/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../images/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../images/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../images/menu/filmes.png);
+}
+
+.icone__jogos::before {
+    content: url(../images/menu/jogos.png);
+}
+
+/* SECAO SUPERIOR */
+
+.superior__secao__container{
+    background-color: #ff94e2;
+    height: 63px;
+    padding: 0 20px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
+.superior__item{
+    color: #ff94e2;
+    font-size: 16px;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.superior__item:hover{
+    background-color: #f9dcf1;
+    color: white;
+    transition: 0.4s;
+}
+
+
+/*VÍDEOS*/
+
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 170px 20px 20px 20px;
+}
+
+.videos__item{
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.descricao__videos h2{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.descricao__videos{
+    color: #ff94e2;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/*RODAPÉ*/
+
+.rodape__container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    height: 875px;
+    background-color: #f9dcf1;
+    color: white;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.rodape__titulo{
+    color: #ff94e2;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+
+/*VIDEOS*/
+
+
+@media(min-width: 834px){
+
+    body {
+        height: 100vh;
+    }
+    .cabecalho__pesquisar__item{
+        display: inline-block;
+    }
+
+    .menu__container{
+        left: 0%;
+        width: 74px;
+        height: auto;
+        top: 80px;
+    }
+
+    .menu__lista{
+        flex-direction: column;  
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+
+    .menu__lista li{
+        width: 100%;
+    }
+
+    .superior__secao__container{
+        left: 74px;
+        width: auto;
+    }
+
+    .videos__container{
+        padding-left: 85px;
+    }
+
+    .rodape__container{
+        height: 420px;
+        padding-left: 75px;
+    }
+
+
+}
+
+@media(min-width: 1440px){
+    
+    
+    .superior__secao__container{
+        margin-left: 90px;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4){
+       display: flex ;
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .menu__container{
+        width: 180px;
+        overflow-y: scroll;
+    }
+
+    .menu__lista{
+        height: auto;
+        padding: 20px 15px 15px 15px;
+        gap: 15px;
+        border-bottom: 1px solid #ff4ed063;
+    }
+
+    .menu__itens{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .videos__container {
+        padding-right: 10px;
+        padding-left: 200px;
+    }
+    
+    .rodape__container{
+        height: 225px;
+        padding-left: 240px;
+    }
+
+}
+
+
+

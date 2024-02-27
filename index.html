@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+       <!-- Cabecalho -->
+    <header>
+        <nav class="cabecalho__container">
+            <i class="fab fa-youtube " style="color:  #ff94e2;"></i>
+
+            <div class="cabecalho__pesquisar__item">
+              <form action="">
+                <input type="search" class="  pesquisar__input border" id="pesquisar" placeholder="Pesquisar">
+                
+                <i class="fas fa-search" style="color:  #ff94e2;"></i>
+                
+              </form>
+            </div>
+
+            <div class="cabecalho__icones__item">
+                <a href="#" class="cabecalho__videos">
+                    <i class="fas fa-video" style="color:  #ff94e2;"></i>
+                </a>
+                <a href="#" class="cabecalho__notificacoes">
+                    <i class="fas fa-bell" style="color:  #ff94e2;"></i>
+                </a>
+                <a href="#" class="cabecalho__avatar">
+                    <i class="fas fa-user-circle" style="color: #ff94e2;"></i>
+                </a> 
+            </div>
+        </nav>
+    </header>
+
+     <!-- Menu lateral -->
+
+     <aside class="menu__container">
+        <ul class="menu__lista">
+            <li>
+                <a href="#" class="menu__itens">
+                    <i class="icone__inicio icone-item"></i>
+                    <span>Início</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="menu__itens">
+                    <i class="icone__explorar icone-item"></i>
+                    <span>Explorar</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="menu__itens">
+                    <i class="icone__shorts icone-item"></i>
+                    <span>Shorts</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="menu__itens">
+                    <i class="icone__inscricoes icone-item"></i>
+                    <span>Inscrições</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="" class="menu__itens">
+                    <i class="icone__biblioteca icone-item"></i>
+                    <span>Biblioteca</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__historico icone-item"></i>
+                    <span>Histórico</span></a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__relogio icone-item"></i>
+                    <span>Assistir mais tarde</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__like icone-item"></i>
+                    <span>Marcados com like</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__mostrar icone-item"></i>
+                    <span>Mostrar mais 2</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__deschamps icone-item"></i>
+                    <span>Felipe Deschamps</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__nerd icone-item"></i>
+                    <span>Jovem Nerd</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__souto icone-item"></i>
+                    <span>Mario Souto</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__iamarino icone-item"></i>
+                    <span>Atila Iamarino</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__ballerini icone-item"></i>
+                    <span>Rafaella Ballerini</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens" href="#">
+                    <i class="icone__gaveta icone-item"></i>
+                    <span>Gaveta</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="menu__itens inscricoes" href="#">INSCRIÇÕES</a>
+            </li>
+        </ul>
+
+        <ul class="menu__lista">
+            <li class="jogos">
+                <a class="menu__itens" href="#">
+                    <i class="icone__jogos icone-item"></i>
+                    <span>Jogos</span>
+                </a>
+            </li>
+
+            <li class="filmes">
+                <a class="menu__itens" href="#">
+                    <i class="icone__filmes icone-item"></i>
+                    <span>Filmes</span>
+                </a>
+            </li>
+            <li class="premium">
+                <a class="menu__itens" href="#">
+                    <i class="icone__videos icone-item"></i>
+                    <span>Vídeo Premium</span>
+                </a>
+            </li>
+
+            <li class="menu__itens maispagina">
+                <a href="#">MAIS DA PÁGINA</a>
+            </li>
+        </ul>
+     </aside>
+
+       <!-- Seção superior -->
+
+       <section class="superior__secao__container">
+        <a class="superior__item" href="#">Tudo</a>
+        <a class="superior__item" href="#">Debates</a>
+        <a class="superior__item" href="#">Ao Vivo</a>
+        <a class="superior__item" href="#">Podcasts</a>
+        <a class="superior__item" href="#">Fundos de Investimento</a>
+        <a class="superior__item" href="#">Desenhos</a>
+        <a class="superior__item" href="#">Data Science</a>
+        <a class="superior__item" href="#">Apps</a>
+        <a class="superior__item" href="#">Linguagem de Programação</a>
+        <a class="superior__item" href="#">Ciência da Computação</a>
+        <a class="superior__item" href="#">Marketing</a>
+    </section>
+
+      <!-- Vídeos -->
+      <ul class="videos__container">
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/b2iG-d6r6Us?si=H_FFD0PnEajUWk53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="descricao__videos">
+            <h2>minha rotina e trabalho em manhattan, nyc: FASHION WEEK EDITION</h2>
+            <p>3.035 visualizações há 4 horas</p>
+           </div>
+        </li>
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/y4ltLH9iK8E?si=nt0xgEZck2s7DVW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>minha rotina e trabalho em manhattan, nyc: FASHION WEEK EDITION</h2>
+                <p>3.035 visualizações há 4 horas</p>
+               </div>  
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/WcTuNxpheDc?si=fwAK_VbeyshI21GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>baile Vogue</h2>
+                <p>45 mil visualizações há 2 semanas</p>
+               </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/COp7BR_Dvps?si=rVk4YCM-aZoNur8v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>30 Minute Relaxing Yoga For Mental Health | All Levels - Slow Seated Flow</h2>
+                <p>783 mil visualizações há 3 anos</p>
+               </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/LvccYeloy74?si=45wQU5JdEAi9esuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>Como vencer a FALTA DE DISCIPLINA para estudar PROGRAMAÇÃO</h2>
+                <p>603 visualizações há 2 semanas</p>
+               </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/d0WrwRKtgcY?si=M1dseGuNd-Re1DMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>VLOG NO ALASKA!! Do bazar ao campo de abóbora</h2>
+                <p>4,4 mil visualizações há 5 meses</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/zvxt5h7sCso?si=Rr7POpmCYEipV2R-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>alanzoka jogando Fears to Fathom - Ironbark Lookout</h2>
+                <p>3,1 mil visualizações há 3 meses</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/ts-H3W1uLMM?si=98Tvs8b3qCrNi-aR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)</h2>
+                <p>36 mil visualizações há 4 semanas</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/4AwKAHib_nc?si=GBwwkitwiT1DCRYr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>Living Alone Diaries // a day in my life in NYC vlog</h2>
+                <p>120 mil visualizações há 4 dias</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/lw53KU5C0a0?si=L3W26iRv6ZOmE54o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>MAQUIA E FALA: Atualizações pós férias e desabafos</h2>
+                <p>102 mil visualizações há 2 dias</p>
+            </div>
+        </li>
+
+        
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/SkVqtL1zaGM?si=QnR_b6Tf5eP_PD7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>Island hopping in Greece...my dream holiday came true!! | Europe Summer Diaries 🍹🏝 VLOG</h2>
+                <p>542 mil visualizações há 1 ano</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/n_Etdr7Dbjs?si=9qIjtmkDFYO_sR-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>HTML + CSS NA PRÁTICA 🔥 Faça seu primeiro site</h2>
+                <p>322 mil visualizações há 1 ano</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/q5Fzc7WGHjw?si=8aYxKhYtlTtQTf5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>morando sozinha na coreia: um dia sendo modelo, date sozinha, arrumando a casa, dog cafe, etc</h2>
+                <p>86 mil visualizações há 6 dias</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/EvywabWkKOs?si=ggjnWOAZncVdpOEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>GRAMMY 2024: LOOKS, BAFOS E EXPOSED DO JAY-Z NO PALCO | Diva Depressão</h2>
+                <p>386 mil visualizações há 12 dias</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/5nqtwcO-drA?si=vHmTE1s2DbHtFayr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>Daily chronicles💓Solo date, pottery painting, new cafe</h2>
+                <p>70 mil visualizações há 5 dias</p>
+            </div>
+        </li>
+
+        <li class="videos__item">
+            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/9jlBdtIo6x0?si=r80CFbgmC4YvFdUH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="descricao__videos">
+                <h2>how to be happy alone</h2>
+                <p>832 mil visualizações há 1 ano</p>
+            </div>
+        </li>
+      </ul>
+
+        <!-- <Seção rodapé> -->
+
+        <footer class="rodape__container">
+            <section>
+                <h2 class="rodape__titulo">Programação</h2>
+                <p class="rodape__texto">Lógica</p>
+                <p>Python</p>
+                <p>Computação</p>
+                <p>Jogos</p>
+                <p>Computação</p>
+                <p>Node JS</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">Data Science</h2>
+                <p class="rodape__texto">Ciência de dados</p>
+                <p>BI</p>
+                <p>SQL</p>
+                <p>Banco de Dados</p>
+                <p>Machine Learning</p>
+                <p>NoSQL</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">UX e Design</h2>
+                <p class="rodape__texto">Photoshop</p>
+                <p>Illustrator</p>
+                <p>Usabilidade</p>
+                <p>Vídeo e Motion</p>
+                <p>Figma</p>
+                <p>Interface</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">Inovação e Gestão</h2>
+                <p class="rodape__texto">Métodos ágeis</p>
+                <p>Softskills</p>
+                <p>Liderança</p>
+                <p>Gestão</p>
+                <p>Startups</p>
+                <p>Vendas</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">Front-end</h2>
+                <p class="rodape__texto">HTML</p>
+                <p>CSS</p>
+                <p>React</p>
+                <p>Angular</p>
+                <p>JavaScript</p>
+                <p>jQuery</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">Devops</h2>
+                <p class="rodape__texto">AWS</p>
+                <p>Azure</p>
+                <p>Docker</p>
+                <p>Segurança</p>
+                <p>IaC</p>
+                <p>Linux</p>
+            </section>
+    
+            <section>
+                <h2 class="rodape__titulo">Mobile</h2>
+                <p class="rodape__texto">React Native</p>
+                <p>Flutter</p>
+                <p>iOS</p>
+                <p>Swift</p>
+                <p>Android</p>
+                <p>Kotlin</p>
+            </section>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>
